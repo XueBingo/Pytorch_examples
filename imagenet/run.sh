@@ -1,0 +1,2 @@
+ncu --profile-from-start off --metrics smsp__sass_thread_inst_executed_op_fadd_pred_on,smsp__sass_thread_inst_executed_op_fmul_pred_on,smsp__sass_thread_inst_executed_op_ffma_pred_on --target-processes all python main.py -a resnet18 --epochs 1 --dummy > outputs/A100_resnet18.txt
+ncu --profile-from-start off --metrics smsp__sass_thread_inst_executed_op_fadd_pred_on,smsp__sass_thread_inst_executed_op_fmul_pred_on,smsp__sass_thread_inst_executed_op_ffma_pred_on --target-processes all python main.py -a alexnet --epochs 1 --dummy > outputs/A100_alexnet.txt
